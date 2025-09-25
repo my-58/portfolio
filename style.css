@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* common */
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+}
+
+a {
+  transition: 0.5s;
+
+  &:hover {
+    color: #555;
+    background: #eee;
+  }
+}
+
+/* header */
+
+header {
+  background: #eee;
+  padding: 32px 0;
+  text-align: center;
+}
+
+header img {
+  object-fit: contain;
+}
+
+h1 {
+  margin: 16px 0 0;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+.badge {
+  border: 1px solid #000;
+  padding: 4px 8px;
+  border-radius: 999px;
+}
+
+header p {
+  margin-top: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  background: #555;
+  padding: 16px;
+  border-radius: 999px;
+  display: inline-block;
+  margin-top: 16px;
+}
+
+
+/* main */
+
+main {
+  padding: 80px 320px;
+}
+
+div {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+section {
+  padding: 20px 32px;
+  flex: 1;
+  box-shadow: 0 0 16px rgb(0 0 0 / 0.15);
+  border-radius: 8px;
+}
+
+.about p,
+.skills p,
+.works p {
+  margin-top: 16px;
+}
+
+.h2 {
+  margin-top: 80px;
+}
+
+.skills,
+.work {
+  margin-top: 16px;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding: 64px 0;
+  color: #555;
+}
