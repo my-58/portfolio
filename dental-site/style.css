@@ -221,13 +221,17 @@ address {
     flex-direction: column;
   }
 
+header img {
+  width: auto;
+  max-width: 100%;
+}
+
   .hero {
     text-align: center;
   }
 
   main .hero h2 {
-    width: auto;
-    max-width: 100%;
+   font-size: 32px;
   }
 
   main {
