@@ -230,8 +230,9 @@ header img {
     text-align: center;
   }
 
-  main .hero h2 {
-   font-size: 32px;
+  .hero h2 {
+   font-size: 28px;
+    overflow-wrap:anywhere;
   }
 
   main {
