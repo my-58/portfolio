@@ -65,10 +65,12 @@ a {
 /* main */
 
 main {
-  padding: 80px 320px;
+  padding: 80px 64px;
 }
 
-div {
+.info,
+.skills,
+.works {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
@@ -103,4 +105,14 @@ footer {
   border-top: 1px solid #ccc;
   padding: 64px 0;
   color: #555;
+}
+
+/* responsive */
+
+@media (max-width: 640px) {
+  .info,
+  .skills,
+  .works {
+    flex-direction: column;
+  }
 }
