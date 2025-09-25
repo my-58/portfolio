@@ -1,0 +1,225 @@
+@charset "utf-8";
+
+/* common */
+
+* {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+nav {
+  font-family: serif;
+}
+
+h2 {
+  color: #6f1d1b
+}
+
+.container {
+  padding: 80px 0;
+  margin: 0 auto;
+}
+
+/* header */
+
+.nav-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+header {
+  padding: 32px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+nav {
+  font-size: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit;
+  white-space: pre;
+}
+
+/* hero */
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.concept h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.concept p {
+  text-align: center;
+  margin-top: 32px;
+}
+
+.concept img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
+.concept-container {
+  display: flex;
+  margin: 64px auto 0;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+}
+
+.concept-desc {
+  max-width: 640px;
+}
+
+.concept-desc h3 {
+  color: #245646;
+  text-align: center;
+  font-size: 24px;
+}
+
+.concept-desc p {
+  color: inherit;
+}
+
+/* menu */
+
+.menu {
+  text-align: center;
+}
+
+.menu h2,
+.menu>p {
+  text-align: center;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-top: 160px;
+  font-size: 40px;
+}
+
+.menu>p {
+  margin-top: 32px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 80px;
+}
+
+/* gallery */
+
+.gallery h2,
+.gallery p {
+  text-align: center;
+}
+
+.gallery h2 {
+  font-size: 40px;
+  margin-top: 160px;
+}
+
+.gallery p {
+  margin-top: 32px;
+}
+
+.gallery img {
+  margin-top: 80px;
+  width: 100%;
+  max-height: 800px;
+  object-fit: cover;
+}
+
+.gallery-img {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* access */
+
+.access h2,
+.access p {
+  text-align: center;
+}
+
+.access h2 {
+  font-size: 40px;
+  margin-top: 160px;
+}
+
+.access p {
+  margin-top: 32px;
+}
+
+.store-info {
+  display: flex;
+  margin-top: 80px;
+  align-items: center;
+  justify-content: center;
+}
+
+.info h3 {
+  text-align: center;
+}
+
+.info ul {
+  margin-top: 32px;
+}
+
+.info li {
+  list-style: none;
+}
+
+
+iframe {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+}
+
+/* footer */
+
+footer {
+  margin-top: 80px;
+  text-align: center;
+}
+
+footer p {
+  font-family: serif;
+  font-weight: bold;
+}
+
+footer small {
+  padding-bottom: 80px;
+}
+
+/* responsive */
+
+@media (max-width: 640px) {
+
+  .concept-container,
+  .store-info {
+    flex-direction: column;
+  }
+
+  .concept-desc {
+    margin: 0 auto;
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+}
