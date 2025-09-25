@@ -10,6 +10,11 @@ p {
   margin: 0;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 p {
   line-height: 1.6;
 }
@@ -47,18 +52,19 @@ header {
 .clinic img {
   width: 100%;
   height: auto;
-  max-height: 70vh;;
+  max-height: 70vh;
+  ;
   object-fit: cover;
 }
 
 .hero {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .hero h2 {
   font-size: 40px;
-  width: 450px;
+  width: 100%;
 }
 
 .dsc {
@@ -215,16 +221,17 @@ address {
 /* responsive */
 
 @media (max-width: 640px) {
+
   .guide,
   header,
   .dr-pf {
     flex-direction: column;
   }
 
-header img {
-  width: auto;
-  max-width: 100%;
-}
+  header img {
+    width: auto;
+    max-width: 100%;
+  }
 
   .hero {
     text-align: center;
@@ -232,8 +239,7 @@ header img {
 
   .hero h2 {
     text-align: start;
-   font-size: 24px;
-    overflow-wrap:anywhere;
+    font-size: 24px;
   }
 
   main {
