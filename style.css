@@ -115,4 +115,15 @@ footer {
   .works {
     flex-direction: column;
   }
+
+  main {
+    padding: 80px 16px;
+  }
+
+  .works section a {
+    display: block;
+    width: fit-content;
+    margin: 16px auto 0;
+  }
+
 }
